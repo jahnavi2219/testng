@@ -1,0 +1,255 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jan 08 14:30:21 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>49 seconds (49814 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='paralleldemo.Paralleltest.Test2()'><b>Test2</b><br>Test class: paralleldemo.Paralleltest</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+an holloueziadur digor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;br&quot;]},{&quot;name&quot;:&quot;Wikipedia (pl)&quot;,&quot;description&quot;:&quot;Wikipedia, wolna encyklopedia&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;pl&quot;]},{&quot;name&quot;:&quot;ﾐ柘孟ｺﾑ孟ｿﾑ?ﾐｴﾑ錦? (be-tarask)&quot;,&quot;description&quot;:&quot;ﾐ柘孟ｺﾑ孟ｿﾑ?ﾐｴﾑ錦?, ﾐｲﾐｾﾐｻﾑ糊ｽﾐｰﾑ? ﾑ?ﾐｽﾑ�ﾑ巾ｺﾐｻﾑ?ﾐｿﾑ?ﾐｴﾑ錦?&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;be-tarask&quot;]},{&quot;name&quot;:&quot;Wikipedia (sv)&quot;,&quot;description&quot;:&quot;Wikipedia, den fria encyklopedin&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;sv-SE&quot;]},{&quot;name&quot;:&quot;犲ｧ犲ｴ犲?犲ｴ犲樅ｺｵ狃犲扉ｺ? (lo)&quot;,&quot;description&quot;:&quot;犲ｧ犲ｴ犲?犲ｴ犲樅ｺｵ狃犲扉ｺ?, 犲ｪ犲ｲ犲･犲ｲ犲吭ｺｸ犲?犲ｻ犲｡狃犲ｪ犲･犲ｵ&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;lo&quot;]},{&quot;name&quot;:&quot;Wikipedija (sl)&quot;,&quot;description&quot;:&quot;Wikipedija, prosta enciklopedija&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;sl&quot;]},{&quot;name&quot;:&quot;Vikipﾄ電ija&quot;,&quot;description&quot;:&quot;Vikipﾄ電ija, brﾄｫvﾄ? enciklopﾄ電ija&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;lv&quot;]},{&quot;name&quot;:&quot;Biquipedia (an)&quot;,&quot;description&quot;:&quot;A enciclopedia Libre&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;an&quot;]}],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;toolkit@mozilla.org&quot;,&quot;minVersion&quot;:null,&quot;maxVersion&quot;:null}],&quot;targetPlatforms&quot;:[],&quot;seen&quot;:true,&quot;dependencies&quot;:[],&quot;incognito&quot;:&quot;spanning&quot;,&quot;userPermissions&quot;:{&quot;permissions&quot;:[],&quot;origins&quot;:[]},&quot;icons&quot;:{&quot;16&quot;:&quot;favicon.ico&quot;},&quot;iconURL&quot;:null,&quot;blocklistState&quot;:0,&quot;blocklistURL&quot;:null,&quot;startupData&quot;:null,&quot;hidden&quot;:true,&quot;installTelemetryInfo&quot;:null,&quot;recommendationState&quot;:null,&quot;rootURI&quot;:&quot;resource://search-extensions/wikipedia/&quot;,&quot;location&quot;:&quot;app-builtin&quot;}
+1578474026872	addons.xpi	DEBUG	Loading bootstrap scope from resource://search-extensions/wikipedia/
+1578474026872	addons.xpi	DEBUG	Calling bootstrap method install on wikipedia@search.mozilla.org version 1.0
+1578474026872	addons.xpi	DEBUG	Calling bootstrap method startup on wikipedia@search.mozilla.org version 1.0
+1578474063099	addons.xpi	DEBUG	Calling bootstrap method shutdown on wikipedia@search.mozilla.org version 1.0
+1578474063105	addons.xpi	DEBUG	Calling bootstrap method shutdown on webcompat@mozilla.org version 6.4.0
+1578474063118	addons.xpi	DEBUG	Calling bootstrap method shutdown on twitter@search.mozilla.org version 1.0
+1578474063120	addons.xpi	DEBUG	Calling bootstrap method shutdown on screenshots@mozilla.org version 39.0.0
+1578474063126	addons.xpi	DEBUG	Calling bootstrap method shutdown on google@search.mozilla.org version 1.0
+1578474063130	addons.xpi	DEBUG	Calling bootstrap method shutdown on formautofill@mozilla.org version 1.0
+1578474063135	addons.xpi	DEBUG	Calling bootstrap method shutdown on ebay@search.mozilla.org version 1.0
+1578474063137	addons.xpi	DEBUG	Calling bootstrap method shutdown on doh-rollout@mozilla.org version 1.3.0
+1578474063142	addons.xpi	DEBUG	Calling bootstrap method shutdown on default-theme@mozilla.org version 1.0
+1578474063145	addons.xpi	DEBUG	Calling bootstrap method shutdown on ddg@search.mozilla.org version 1.0
+1578474063147	addons.xpi	DEBUG	Calling bootstrap method shutdown on bing@search.mozilla.org version 1.0
+1578474063148	addons.xpi	DEBUG	Calling bootstrap method shutdown on amazondotcom@search.mozilla.org version 1.1
+1578474063254	addons.manager	DEBUG	before shutdown
+1578474063260	addons.manager	DEBUG	shutdown
+1578474063262	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1578474063262	addons.xpi	DEBUG	shutdown
+1578474063262	addons.xpi-utils	DEBUG	shutdown
+1578474063262	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1578474063263	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1578474063264	addons.manager	DEBUG	Async provider shutdown done
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;IBM-Testing01&apos;, ip: &apos;169.254.52.243&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:124)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at paralleldemo.Paralleltest.Test2(Paralleltest.java:23)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+an holloueziadur digor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;br&quot;]},{&quot;name&quot;:&quot;Wikipedia (pl)&quot;,&quot;description&quot;:&quot;Wikipedia, wolna encyklopedia&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;pl&quot;]},{&quot;name&quot;:&quot;ﾐ柘孟ｺﾑ孟ｿﾑ?ﾐｴﾑ錦? (be-tarask)&quot;,&quot;description&quot;:&quot;ﾐ柘孟ｺﾑ孟ｿﾑ?ﾐｴﾑ錦?, ﾐｲﾐｾﾐｻﾑ糊ｽﾐｰﾑ? ﾑ?ﾐｽﾑ�ﾑ巾ｺﾐｻﾑ?ﾐｿﾑ?ﾐｴﾑ錦?&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;be-tarask&quot;]},{&quot;name&quot;:&quot;Wikipedia (sv)&quot;,&quot;description&quot;:&quot;Wikipedia, den fria encyklopedin&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;sv-SE&quot;]},{&quot;name&quot;:&quot;犲ｧ犲ｴ犲?犲ｴ犲樅ｺｵ狃犲扉ｺ? (lo)&quot;,&quot;description&quot;:&quot;犲ｧ犲ｴ犲?犲ｴ犲樅ｺｵ狃犲扉ｺ?, 犲ｪ犲ｲ犲･犲ｲ犲吭ｺｸ犲?犲ｻ犲｡狃犲ｪ犲･犲ｵ&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;lo&quot;]},{&quot;name&quot;:&quot;Wikipedija (sl)&quot;,&quot;description&quot;:&quot;Wikipedija, prosta enciklopedija&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;sl&quot;]},{&quot;name&quot;:&quot;Vikipﾄ電ija&quot;,&quot;description&quot;:&quot;Vikipﾄ電ija, brﾄｫvﾄ? enciklopﾄ電ija&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;lv&quot;]},{&quot;name&quot;:&quot;Biquipedia (an)&quot;,&quot;description&quot;:&quot;A enciclopedia Libre&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;an&quot;]}],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;toolkit@mozilla.org&quot;,&quot;minVersion&quot;:null,&quot;maxVersion&quot;:null}],&quot;targetPlatforms&quot;:[],&quot;seen&quot;:true,&quot;dependencies&quot;:[],&quot;incognito&quot;:&quot;spanning&quot;,&quot;userPermissions&quot;:{&quot;permissions&quot;:[],&quot;origins&quot;:[]},&quot;icons&quot;:{&quot;16&quot;:&quot;favicon.ico&quot;},&quot;iconURL&quot;:null,&quot;blocklistState&quot;:0,&quot;blocklistURL&quot;:null,&quot;startupData&quot;:null,&quot;hidden&quot;:true,&quot;installTelemetryInfo&quot;:null,&quot;recommendationState&quot;:null,&quot;rootURI&quot;:&quot;resource://search-extensions/wikipedia/&quot;,&quot;location&quot;:&quot;app-builtin&quot;}
+1578474026872	addons.xpi	DEBUG	Loading bootstrap scope from resource://search-extensions/wikipedia/
+1578474026872	addons.xpi	DEBUG	Calling bootstrap method install on wikipedia@search.mozilla.org version 1.0
+1578474026872	addons.xpi	DEBUG	Calling bootstrap method startup on wikipedia@search.mozilla.org version 1.0
+1578474063099	addons.xpi	DEBUG	Calling bootstrap method shutdown on wikipedia@search.mozilla.org version 1.0
+1578474063105	addons.xpi	DEBUG	Calling bootstrap method shutdown on webcompat@mozilla.org version 6.4.0
+1578474063118	addons.xpi	DEBUG	Calling bootstrap method shutdown on twitter@search.mozilla.org version 1.0
+1578474063120	addons.xpi	DEBUG	Calling bootstrap method shutdown on screenshots@mozilla.org version 39.0.0
+1578474063126	addons.xpi	DEBUG	Calling bootstrap method shutdown on google@search.mozilla.org version 1.0
+1578474063130	addons.xpi	DEBUG	Calling bootstrap method shutdown on formautofill@mozilla.org version 1.0
+1578474063135	addons.xpi	DEBUG	Calling bootstrap method shutdown on ebay@search.mozilla.org version 1.0
+1578474063137	addons.xpi	DEBUG	Calling bootstrap method shutdown on doh-rollout@mozilla.org version 1.3.0
+1578474063142	addons.xpi	DEBUG	Calling bootstrap method shutdown on default-theme@mozilla.org version 1.0
+1578474063145	addons.xpi	DEBUG	Calling bootstrap method shutdown on ddg@search.mozilla.org version 1.0
+1578474063147	addons.xpi	DEBUG	Calling bootstrap method shutdown on bing@search.mozilla.org version 1.0
+1578474063148	addons.xpi	DEBUG	Calling bootstrap method shutdown on amazondotcom@search.mozilla.org version 1.1
+1578474063254	addons.manager	DEBUG	before shutdown
+1578474063260	addons.manager	DEBUG	shutdown
+1578474063262	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1578474063262	addons.xpi	DEBUG	shutdown
+1578474063262	addons.xpi-utils	DEBUG	shutdown
+1578474063262	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1578474063263	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1578474063264	addons.manager	DEBUG	Async provider shutdown done
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:112)
+	... 20 more
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1780562931", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1780562931'><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+an holloueziadur digor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;br&quot;]},{&quot;name&quot;:&quot;Wikipedia (pl)&quot;,&quot;description&quot;:&quot;Wikipedia, wolna encyklopedia&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;pl&quot;]},{&quot;name&quot;:&quot;ﾐ柘孟ｺﾑ孟ｿﾑ?ﾐｴﾑ錦? (be-tarask)&quot;,&quot;description&quot;:&quot;ﾐ柘孟ｺﾑ孟ｿﾑ?ﾐｴﾑ錦?, ﾐｲﾐｾﾐｻﾑ糊ｽﾐｰﾑ? ﾑ?ﾐｽﾑ�ﾑ巾ｺﾐｻﾑ?ﾐｿﾑ?ﾐｴﾑ錦?&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;be-tarask&quot;]},{&quot;name&quot;:&quot;Wikipedia (sv)&quot;,&quot;description&quot;:&quot;Wikipedia, den fria encyklopedin&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;sv-SE&quot;]},{&quot;name&quot;:&quot;犲ｧ犲ｴ犲?犲ｴ犲樅ｺｵ狃犲扉ｺ? (lo)&quot;,&quot;description&quot;:&quot;犲ｧ犲ｴ犲?犲ｴ犲樅ｺｵ狃犲扉ｺ?, 犲ｪ犲ｲ犲･犲ｲ犲吭ｺｸ犲?犲ｻ犲｡狃犲ｪ犲･犲ｵ&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;lo&quot;]},{&quot;name&quot;:&quot;Wikipedija (sl)&quot;,&quot;description&quot;:&quot;Wikipedija, prosta enciklopedija&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;sl&quot;]},{&quot;name&quot;:&quot;Vikipﾄ電ija&quot;,&quot;description&quot;:&quot;Vikipﾄ電ija, brﾄｫvﾄ? enciklopﾄ電ija&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;lv&quot;]},{&quot;name&quot;:&quot;Biquipedia (an)&quot;,&quot;description&quot;:&quot;A enciclopedia Libre&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;an&quot;]}],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;toolkit@mozilla.org&quot;,&quot;minVersion&quot;:null,&quot;maxVersion&quot;:null}],&quot;targetPlatforms&quot;:[],&quot;seen&quot;:true,&quot;dependencies&quot;:[],&quot;incognito&quot;:&quot;spanning&quot;,&quot;userPermissions&quot;:{&quot;permissions&quot;:[],&quot;origins&quot;:[]},&quot;icons&quot;:{&quot;16&quot;:&quot;favicon.ico&quot;},&quot;iconURL&quot;:null,&quot;blocklistState&quot;:0,&quot;blocklistURL&quot;:null,&quot;startupData&quot;:null,&quot;hidden&quot;:true,&quot;installTelemetryInfo&quot;:null,&quot;recommendationState&quot;:null,&quot;rootURI&quot;:&quot;resource://search-extensions/wikipedia/&quot;,&quot;location&quot;:&quot;app-builtin&quot;}
+1578474026872	addons.xpi	DEBUG	Loading bootstrap scope from resource://search-extensions/wikipedia/
+1578474026872	addons.xpi	DEBUG	Calling bootstrap method install on wikipedia@search.mozilla.org version 1.0
+1578474026872	addons.xpi	DEBUG	Calling bootstrap method startup on wikipedia@search.mozilla.org version 1.0
+1578474063099	addons.xpi	DEBUG	Calling bootstrap method shutdown on wikipedia@search.mozilla.org version 1.0
+1578474063105	addons.xpi	DEBUG	Calling bootstrap method shutdown on webcompat@mozilla.org version 6.4.0
+1578474063118	addons.xpi	DEBUG	Calling bootstrap method shutdown on twitter@search.mozilla.org version 1.0
+1578474063120	addons.xpi	DEBUG	Calling bootstrap method shutdown on screenshots@mozilla.org version 39.0.0
+1578474063126	addons.xpi	DEBUG	Calling bootstrap method shutdown on google@search.mozilla.org version 1.0
+1578474063130	addons.xpi	DEBUG	Calling bootstrap method shutdown on formautofill@mozilla.org version 1.0
+1578474063135	addons.xpi	DEBUG	Calling bootstrap method shutdown on ebay@search.mozilla.org version 1.0
+1578474063137	addons.xpi	DEBUG	Calling bootstrap method shutdown on doh-rollout@mozilla.org version 1.3.0
+1578474063142	addons.xpi	DEBUG	Calling bootstrap method shutdown on default-theme@mozilla.org version 1.0
+1578474063145	addons.xpi	DEBUG	Calling bootstrap method shutdown on ddg@search.mozilla.org version 1.0
+1578474063147	addons.xpi	DEBUG	Calling bootstrap method shutdown on bing@search.mozilla.org version 1.0
+1578474063148	addons.xpi	DEBUG	Calling bootstrap method shutdown on amazondotcom@search.mozilla.org version 1.1
+1578474063254	addons.manager	DEBUG	before shutdown
+1578474063260	addons.manager	DEBUG	shutdown
+1578474063262	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1578474063262	addons.xpi	DEBUG	shutdown
+1578474063262	addons.xpi-utils	DEBUG	shutdown
+1578474063262	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1578474063263	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1578474063264	addons.manager	DEBUG	Async provider shutdown done
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1&apos;, time: &apos;2016-06-30 17:37:03&apos;
+System info: host: &apos;IBM-Testing01&apos;, ip: &apos;169.254.52.243&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:124)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at paralleldemo.Paralleltest.Test2(Paralleltest.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+an holloueziadur digor&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;br&quot;]},{&quot;name&quot;:&quot;Wikipedia (pl)&quot;,&quot;description&quot;:&quot;Wikipedia, wolna encyklopedia&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;pl&quot;]},{&quot;name&quot;:&quot;ﾐ柘孟ｺﾑ孟ｿﾑ?ﾐｴﾑ錦? (be-tarask)&quot;,&quot;description&quot;:&quot;ﾐ柘孟ｺﾑ孟ｿﾑ?ﾐｴﾑ錦?, ﾐｲﾐｾﾐｻﾑ糊ｽﾐｰﾑ? ﾑ?ﾐｽﾑ�ﾑ巾ｺﾐｻﾑ?ﾐｿﾑ?ﾐｴﾑ錦?&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;be-tarask&quot;]},{&quot;name&quot;:&quot;Wikipedia (sv)&quot;,&quot;description&quot;:&quot;Wikipedia, den fria encyklopedin&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;sv-SE&quot;]},{&quot;name&quot;:&quot;犲ｧ犲ｴ犲?犲ｴ犲樅ｺｵ狃犲扉ｺ? (lo)&quot;,&quot;description&quot;:&quot;犲ｧ犲ｴ犲?犲ｴ犲樅ｺｵ狃犲扉ｺ?, 犲ｪ犲ｲ犲･犲ｲ犲吭ｺｸ犲?犲ｻ犲｡狃犲ｪ犲･犲ｵ&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;lo&quot;]},{&quot;name&quot;:&quot;Wikipedija (sl)&quot;,&quot;description&quot;:&quot;Wikipedija, prosta enciklopedija&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;sl&quot;]},{&quot;name&quot;:&quot;Vikipﾄ電ija&quot;,&quot;description&quot;:&quot;Vikipﾄ電ija, brﾄｫvﾄ? enciklopﾄ電ija&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;lv&quot;]},{&quot;name&quot;:&quot;Biquipedia (an)&quot;,&quot;description&quot;:&quot;A enciclopedia Libre&quot;,&quot;creator&quot;:null,&quot;developers&quot;:null,&quot;translators&quot;:null,&quot;contributors&quot;:null,&quot;locales&quot;:[&quot;an&quot;]}],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;toolkit@mozilla.org&quot;,&quot;minVersion&quot;:null,&quot;maxVersion&quot;:null}],&quot;targetPlatforms&quot;:[],&quot;seen&quot;:true,&quot;dependencies&quot;:[],&quot;incognito&quot;:&quot;spanning&quot;,&quot;userPermissions&quot;:{&quot;permissions&quot;:[],&quot;origins&quot;:[]},&quot;icons&quot;:{&quot;16&quot;:&quot;favicon.ico&quot;},&quot;iconURL&quot;:null,&quot;blocklistState&quot;:0,&quot;blocklistURL&quot;:null,&quot;startupData&quot;:null,&quot;hidden&quot;:true,&quot;installTelemetryInfo&quot;:null,&quot;recommendationState&quot;:null,&quot;rootURI&quot;:&quot;resource://search-extensions/wikipedia/&quot;,&quot;location&quot;:&quot;app-builtin&quot;}
+1578474026872	addons.xpi	DEBUG	Loading bootstrap scope from resource://search-extensions/wikipedia/
+1578474026872	addons.xpi	DEBUG	Calling bootstrap method install on wikipedia@search.mozilla.org version 1.0
+1578474026872	addons.xpi	DEBUG	Calling bootstrap method startup on wikipedia@search.mozilla.org version 1.0
+1578474063099	addons.xpi	DEBUG	Calling bootstrap method shutdown on wikipedia@search.mozilla.org version 1.0
+1578474063105	addons.xpi	DEBUG	Calling bootstrap method shutdown on webcompat@mozilla.org version 6.4.0
+1578474063118	addons.xpi	DEBUG	Calling bootstrap method shutdown on twitter@search.mozilla.org version 1.0
+1578474063120	addons.xpi	DEBUG	Calling bootstrap method shutdown on screenshots@mozilla.org version 39.0.0
+1578474063126	addons.xpi	DEBUG	Calling bootstrap method shutdown on google@search.mozilla.org version 1.0
+1578474063130	addons.xpi	DEBUG	Calling bootstrap method shutdown on formautofill@mozilla.org version 1.0
+1578474063135	addons.xpi	DEBUG	Calling bootstrap method shutdown on ebay@search.mozilla.org version 1.0
+1578474063137	addons.xpi	DEBUG	Calling bootstrap method shutdown on doh-rollout@mozilla.org version 1.3.0
+1578474063142	addons.xpi	DEBUG	Calling bootstrap method shutdown on default-theme@mozilla.org version 1.0
+1578474063145	addons.xpi	DEBUG	Calling bootstrap method shutdown on ddg@search.mozilla.org version 1.0
+1578474063147	addons.xpi	DEBUG	Calling bootstrap method shutdown on bing@search.mozilla.org version 1.0
+1578474063148	addons.xpi	DEBUG	Calling bootstrap method shutdown on amazondotcom@search.mozilla.org version 1.1
+1578474063254	addons.manager	DEBUG	before shutdown
+1578474063260	addons.manager	DEBUG	shutdown
+1578474063262	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1578474063262	addons.xpi	DEBUG	shutdown
+1578474063262	addons.xpi-utils	DEBUG	shutdown
+1578474063262	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1578474063263	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1578474063264	addons.manager	DEBUG	Async provider shutdown done
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:112)
+	... 20 more
+</pre></div></td>
+<td>49</td>
+<td>paralleldemo.Paralleltest@458ad742</td></tr>
+</table><p>
+</body>
+</html>
